@@ -9,29 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=24">
-  <style>
-    /* Ajuste final: todas las flores forman un abanico compacto y descansan dentro del papel. */
-    .bouquet{width:min(100%,42rem);height:30rem}
-    .flower-a{left:7%;top:13.5rem}.daisy-b{left:16%;top:16rem}
-    .flower-c{left:24%;top:10.8rem}.daisy-d{left:32%;top:15rem}
-    .flower-e{left:42%;top:9.2rem}.daisy-f{left:45%;top:15.8rem}
-    .flower-g{left:50%;top:8rem;transform:translateX(-50%);z-index:4}
-    .daisy-h{right:45%;top:15.8rem}.flower-i{right:42%;top:9.2rem}
-    .daisy-j{right:32%;top:15rem}.flower-k{right:24%;top:10.8rem}
-    .flower-l{right:16%;top:16rem}.flower-m{right:7%;top:13.5rem}
-    .paper-wrap{z-index:8}
-    .stem-leaf{z-index:2;bottom:7.3rem}
-    @media(max-width:600px){
-      .bouquet{width:31rem;height:25rem}
-      .flower-a{left:4%;top:11.5rem}.daisy-b{left:13%;top:14rem}
-      .flower-c{left:22%;top:9.2rem}.daisy-d{left:30%;top:13.2rem}
-      .flower-e{left:41%;top:8rem}.daisy-f{left:44%;top:14rem}
-      .flower-g{left:50%;top:7rem}.daisy-h{right:44%;top:14rem}
-      .flower-i{right:41%;top:8rem}.daisy-j{right:30%;top:13.2rem}
-      .flower-k{right:22%;top:9.2rem}.flower-l{right:13%;top:14rem}.flower-m{right:4%;top:11.5rem}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css?v=26">
 </head>
 <body>
   <div class="sky-glow" aria-hidden="true"></div>
@@ -43,10 +21,12 @@
       <h1 id="title">Para ti, <span>Dayana 💛</span></h1>
       <p class="message">Unas flores amarillas para alegrarte el día, porque te mereces muchos momentos bonitos.</p>
       <button class="surprise-button" type="button" id="surpriseButton" aria-expanded="false" aria-controls="surprise surpriseMessage">
-        <span>Presiona para una sorpresa</span><span class="button-icon" aria-hidden="true">✨</span>
+        <span>Presiona para una sorpresa</span>
+        <span class="button-icon" aria-hidden="true">✨</span>
       </button>
       <p class="secret-message" id="surpriseMessage" aria-live="polite">Que nunca te falten razones para sonreír 🌼</p>
     </section>
+
     <section class="surprise" id="surprise" aria-hidden="true">
       <div class="bouquet-scene" aria-label="Un ramo grande y ordenado de flores amarillas">
         <div class="bouquet" aria-hidden="true">
@@ -63,13 +43,16 @@
           <span class="flower sunflower flower-k">🌻</span>
           <span class="flower daisy daisy-l">🌼</span>
           <span class="flower sunflower flower-m">🌻</span>
-          <span class="stem-leaf leaf-left"></span><span class="stem-leaf leaf-right"></span>
+          <span class="stem-leaf leaf-left"></span>
+          <span class="stem-leaf leaf-right"></span>
           <div class="paper-wrap"><span class="ribbon ribbon-left"></span><span class="ribbon ribbon-right"></span></div>
         </div>
       </div>
     </section>
+
     <p class="footer-note">Con cariño, para hacerte sonreír 🌞</p>
   </main>
+
   <script src="script.js?v=22"></script>
 </body>
 </html>
