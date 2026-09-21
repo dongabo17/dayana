@@ -9,7 +9,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=22">
+  <link rel="stylesheet" href="styles.css?v=24">
+  <style>
+    /* Ajuste final: todas las flores forman un abanico compacto y descansan dentro del papel. */
+    .bouquet{width:min(100%,42rem);height:30rem}
+    .flower-a{left:7%;top:13.5rem}.daisy-b{left:16%;top:16rem}
+    .flower-c{left:24%;top:10.8rem}.daisy-d{left:32%;top:15rem}
+    .flower-e{left:42%;top:9.2rem}.daisy-f{left:45%;top:15.8rem}
+    .flower-g{left:50%;top:8rem;transform:translateX(-50%);z-index:4}
+    .daisy-h{right:45%;top:15.8rem}.flower-i{right:42%;top:9.2rem}
+    .daisy-j{right:32%;top:15rem}.flower-k{right:24%;top:10.8rem}
+    .flower-l{right:16%;top:16rem}.flower-m{right:7%;top:13.5rem}
+    .paper-wrap{z-index:8}
+    .stem-leaf{z-index:2;bottom:7.3rem}
+    @media(max-width:600px){
+      .bouquet{width:31rem;height:25rem}
+      .flower-a{left:4%;top:11.5rem}.daisy-b{left:13%;top:14rem}
+      .flower-c{left:22%;top:9.2rem}.daisy-d{left:30%;top:13.2rem}
+      .flower-e{left:41%;top:8rem}.daisy-f{left:44%;top:14rem}
+      .flower-g{left:50%;top:7rem}.daisy-h{right:44%;top:14rem}
+      .flower-i{right:41%;top:8rem}.daisy-j{right:30%;top:13.2rem}
+      .flower-k{right:22%;top:9.2rem}.flower-l{right:13%;top:14rem}.flower-m{right:4%;top:11.5rem}
+    }
+  </style>
 </head>
 <body>
   <div class="sky-glow" aria-hidden="true"></div>
@@ -36,6 +58,11 @@
           <span class="flower daisy daisy-f">🌼</span>
           <span class="flower sunflower flower-g">🌻</span>
           <span class="flower daisy daisy-h">🌼</span>
+          <span class="flower sunflower flower-i">🌻</span>
+          <span class="flower daisy daisy-j">🌼</span>
+          <span class="flower sunflower flower-k">🌻</span>
+          <span class="flower daisy daisy-l">🌼</span>
+          <span class="flower sunflower flower-m">🌻</span>
           <span class="stem-leaf leaf-left"></span><span class="stem-leaf leaf-right"></span>
           <div class="paper-wrap"><span class="ribbon ribbon-left"></span><span class="ribbon ribbon-right"></span></div>
         </div>
